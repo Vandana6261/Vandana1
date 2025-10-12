@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script> const socket = new WebSocket("ws://" + location.host); socket.onmessage = (e) => { if (e.data === "reload") { location.reload(); } }; </script>
+     <link rel="stylesheet" href="ecom.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div>Home</div>
+            <div>Products</div>
+            <div>About</div>
+            <div>Contact</div>
+            <div>Account</div>
+            <div>L</div>
+        </nav>
+        <div id="landing">
+            <div id="landing-text">
+                <h1>Elite Gear for <br> Elite Athletes</h1>
+                <p>Where performance meets style. Experience sportswear <br> engineered for excellence, designed for champions.</p>
+            </div>
+            <div id="landing-image">image</div>
+        </div>
+    </div>
+    <div id="dis-grid">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem, ipsum dolor.</div>
+    </div>
+</body>
+</html>
