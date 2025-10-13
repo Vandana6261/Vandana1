@@ -1,6 +1,8 @@
 *{
     margin: 0%;
     font-family: sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .container{
@@ -131,4 +133,75 @@ nav div img{
 
 #price{
     margin-top: -0.1rem !important;
+}
+
+#exclusive{
+    height: 70vh;
+    width: 60%;
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    justify-self: center;
+}
+
+#exclusive #ex-img{
+    grid-row: 1 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exclusive #ex-img img{
+    width: 75%;
+    height: 55%;
+}
+
+#exclusive #ex-text{
+    grid-row: 1 / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#exclusive #ex-text h1{
+    font-size: 50px;
+    margin: 1.5rem 0 0 0;
+}
+
+#exclusive #ex-text p:last-of-type{
+    font-weight: 500;
+    color: #555;
+    margin: 1.5rem 0 0 0;
+    font-size: 15px;
+}
+
+#exclusive #ex-text button{
+    width: 30%;
+    height: 3rem;
+    background-color: #FF523B;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#exclusive #ex-text button:hover{
+    background-color: #4e4e4e;
+}
+
+footer{
+    height: 11rem;
+    background-color: #222831;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #FF523B;
+    padding: 2rem;
+    gap: 1rem;
+    justify-items: center;
 }
