@@ -119,3 +119,16 @@ nav div img{
     height: 90%;
     border-radius: 20px;
 }
+
+.stars{
+    display: inline-flex;
+    height: 1rem;
+}
+.stars img{
+    height: .1rem;
+    width: .1rem;
+}
+
+#price{
+    margin-top: -0.1rem !important;
+}
